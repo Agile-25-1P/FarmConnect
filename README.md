@@ -1,8 +1,7 @@
 # FarmConnect
 
 
-![Farmer-Buyer Platform Logo]([https://via.placeholder.com/150](https://mensnetwork.ie/wp-content/uploads/FarmConnect-2.png))
-
+![Alt text](https://mensnetwork.ie/wp-content/uploads/FarmConnect-2.png)
 A direct-to-consumer marketplace connecting farmers with buyers through a transparent bidding system.
 
 ## 🌱 Overview
@@ -34,10 +33,6 @@ The Farmer-Buyer Platform is a web application designed to eliminate middlemen f
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Redux, WebSockets for real-time updates
-- **Backend**: Node.js, Express
-- **Database**: MongoDB
-- **Authentication**: JWT
-- **Payment Processing**: Stripe API integration
-- **Real-time Communication**: Socket.io
-- **Deployment**: Docker, AWS
+- **Frontend**: HTML, CSS, JS
+- **Backend**: 
+- **Database**: SQLite
