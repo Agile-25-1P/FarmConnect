@@ -1,0 +1,20 @@
+{
+  "name": "farmconnect",
+  "version": "1.0.0",
+  "description": "![Alt text](https://mensnetwork.ie/wp-content/uploads/FarmConnect-2.png)\r A direct-to-consumer marketplace connecting farmers with buyers through a transparent bidding system.",
+  "homepage": "https://github.com/Agile-25-1P/FarmConnect#readme",
+  "bugs": {
+    "url": "https://github.com/Agile-25-1P/FarmConnect/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agile-25-1P/FarmConnect.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
