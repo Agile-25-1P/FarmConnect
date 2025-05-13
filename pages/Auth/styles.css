@@ -1,0 +1,266 @@
+/* Root Variables */
+:root {
+    --primary: #2c7b2f;
+    --accent: #31973b;
+    --background: #f0f4f8;
+    --white: #ffffff;
+    --text: #2d4830;
+    --error: #e53e3e;
+    --success: #38a169;
+    --input-border: #cbd5e0;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Layout */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--shadow);
+    max-width: 1100px;
+    width: 100%;
+}
+
+.hero-section {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hero-section .logo h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.hero-section .illustration {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-section .features {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hero-section .features li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .features i {
+    color: var(--success);
+    margin-right: 0.6rem;
+}
+
+/* Form Section */
+.form-section {
+    padding: 2rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header h2 {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.form-header p {
+    margin-top: 0.4rem;
+    color: #555;
+}
+
+/* Success message */
+.success-message {
+    display: none;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #e6fffa;
+    color: var(--success);
+    border: 1px solid var(--success);
+    border-radius: 5px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--input-border);
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 0.5rem 0.75rem;
+}
+
+.input-wrapper i {
+    margin-right: 0.5rem;
+    color: #888;
+}
+
+.form-control {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+/* Password toggle */
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Radio Buttons */
+.user-type {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.user-type input[type="radio"] {
+    display: none;
+}
+
+.user-type label {
+    padding: 0.6rem 1rem;
+    background-color: #edf2f7;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.user-type input[type="radio"]:checked + label {
+    background-color: var(--accent);
+    color: #fff;
+    border: 1px solid var(--primary);
+}
+
+/* Error Message */
+.error-message {
+    color: var(--error);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* Password Strength Meter */
+.strength-meter {
+    height: 6px;
+    width: 100%;
+    background: #e2e8f0;
+    border-radius: 4px;
+    margin-top: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+.strength-meter.weak {
+    background-color: var(--error);
+}
+
+.strength-meter.medium {
+    background-color: #f6ad55;
+}
+
+.strength-meter.strong {
+    background-color: var(--success);
+}
+
+.strength-text {
+    font-size: 0.85rem;
+    margin-top: 0.3rem;
+    color: #555;
+}
+
+/* Button */
+.btn {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.login-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        align-items: center;
+    }
+
+    .user-type {
+        justify-content: center;
+    }
+}
