@@ -9,6 +9,15 @@ const db = new sqlite3.Database("./farmconnect.db", (err) => {
 });
 
 
-// Table creation and other queries goes here.
+db.run(`CREATE TABLE IF NOT EXISTS user (
+    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
+    UserName TEXT NOT NULL,
+    UserTypeID INTEGER NOT NULL,
+    EmailAddress TEXT NOT NULL,
+    PhoneNo TEXT,
+    Password TEXT NOT NULL,
+    ConfirmPassword TEXT NOT NULL
+)`);
+
 
 module.exports = db;
