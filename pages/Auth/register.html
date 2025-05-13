@@ -10,13 +10,19 @@
 <body>
     <div class="container">
         <div class="hero-section">
-            <div class="logo">
-                <h1>FarmConnect</h1>
+             <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <h1>FarmConnect</h1>
+                </a>
             </div>
             <img src="https://cdn-icons-png.flaticon.com/512/3079/3079158.png" alt="Farming Illustration" class="illustration">
             <ul class="features">
-                <li><i class="fas fa-check-circle"></i> Connect with local farmers and buyers</li>
-                <li><i class="fas fa-check-circle"></i> Get fair prices for your products</li>
+                <li><i class="fas fa-check-circle"></i> Connect with your network</li>
+                <li><i class="fas fa-check-circle"></i> Manage your products and orders</li>
+                <li><i class="fas fa-check-circle"></i> Access exclusive resources</li>
+                <li><i class="fas fa-check-circle"></i> Direct farm-to-table traceability</li>
+                <li><i class="fas fa-check-circle"></i> Inventory management system</li>
+                <li><i class="fas fa-check-circle"></i> Real-time market price updates</li>
             </ul>
         </div>
         <div class="form-section">
@@ -26,14 +32,12 @@
             <div id="successMessage" class="success-message">
                 <i class="fas fa-check-circle"></i> Registration successful! Redirecting to dashboard...
             </div>
-            <form id="registrationForm">
+            <form id="registrationForm" action="/submit" methord="POST">
                 <div class="user-type">
                     <input type="radio" id="farmer" name="userType" value="farmer" checked>
                     <label for="farmer"><i class="fas fa-tractor"></i> Farmer</label>
                     <input type="radio" id="buyer" name="userType" value="buyer">
                     <label for="buyer"><i class="fas fa-store"></i> Buyer</label>
-                    <input type="radio" id="supplier" name="userType" value="supplier">
-                    <label for="supplier"><i class="fas fa-truck"></i> Supplier</label>
                 </div>
                 <div class="form-group">
                     <label for="fullName">Full Name</label>
@@ -88,10 +92,22 @@
                 </button>
             </form>
             <div class="login-link">
-                Already have an account? <a href="login.html">Login here</a>
+                Already have an account? <a href="signin.html">Login here</a>
             </div>
+             <div class="social-login">
+                             <div class="divider">
+
+              <span class="divider-line"></span>
+              <span class="divider-text">or</span>
+              <span class="divider-line"></span>
+                          </div>
+
+              <button type="button" class="btn-google" id="googleLogin">
+               <img src="https://png.pngtree.com/png-vector/20230817/ourmid/pngtree-google-logo-vector-png-image_9183290.png" alt="Google logo">
+                Continue with Google
+              </button>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="../../utils/validation.js"></script>
 </body>
 </html>

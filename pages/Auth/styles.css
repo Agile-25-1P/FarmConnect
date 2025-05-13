@@ -4,7 +4,7 @@
     --accent: #31973b;
     --background: #f0f4f8;
     --white: #ffffff;
-    --text: #2d4830;
+    --text: #2d3748;
     --error: #e53e3e;
     --success: #38a169;
     --input-border: #cbd5e0;
@@ -263,4 +263,125 @@ label {
     .user-type {
         justify-content: center;
     }
+}
+
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #8ed591;
+    background: white;
+    color: #005414;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin: 9px 0; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.btn-google:hover {
+    background: #f5fff5; 
+    border-color: #519a54; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-google:active {
+    background: #e8f5e9; 
+    transform: translateY(1px); 
+}
+
+.btn-google img {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.btn-google img {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.divider-text {
+    padding: 0 15px;
+    color: #757575;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+/* Login Page Styles */
+
+.error-message {
+    background: rgba(244, 67, 54, 0.1);
+    color: var(--error);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid rgba(244, 67, 54, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-message i {
+    margin-right: 8px;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 8px;
+}
+
+.forgot-password a {
+    color: var(--gray);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.register-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
 }
